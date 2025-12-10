@@ -1,47 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Estilos.css">
-    <link rel="stylesheet" href="launch.json">
+    <!-- SEO & Title -->
+    <title>Walter Lugo | Portfolio</title>
+    <meta name="description" content="Portfolio de Walter Lugo - Desarrollador Web en formación">
 
+    <!-- Fonts: Outfit (Modern Sans Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="Estilos.css">
+
+    <!-- Icons (Optional but recommended, using Phosphor or FontAwesome CDN if needed, keeping simple for now) -->
 </head>
 
 <body>
 
-    <div class="wrapper">
-
-        <header>
-            <nav class="Menu">
-                <div class="Iniciales">
-                    <h2>W <span>L</span></h2>
-
-                </div>
-                <ul class="ListaMenu">
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="#">Sobre Mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">contacto</a></li>
-                </ul>
-
-            </nav>
-
-        </header>
-        <main class="main">
-            <div>
-                <h1>Walter Lugo</h1>
-                <p>Un señor aprendiendo a programar</p>
-                <a download href="#">
-                    <button>Descargar cv</button>
-                </a>
-
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                W<span>L</span>
             </div>
-            <img src="FotoPortfolioR.jpg" alt="">
-        </main>
-    </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="greeting">Hola, soy</span>
+                <h1>Walter Lugo</h1>
+                <p class="subtitle">Aprendiendo a construir el futuro de la web.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#" class="btn btn-outline">Descargar CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Using the existing image, ensuring it exists -->
+                <img src="FotoPortfolioR.jpg" alt="Foto de Walter Lugo">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-mi" class="section about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p>
+                    Soy un apasionado por la tecnología en constante aprendizaje.
+                    Actualmente estoy profundizando mis conocimientos en desarrollo web,
+                    creando experiencias digitales atractivas y funcionales.
+                    Me encanta resolver problemas y transformar ideas en código.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyectos" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 (Placeholder) -->
+                    <article class="project-card">
+                        <div class="card-image placeholder-bg"></div>
+                        <div class="card-content">
+                            <h3>Proyecto Demo 1</h3>
+                            <p>Una breve descripción de este proyecto increíble.</p>
+                            <a href="#" class="link-arrow">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 (Placeholder) -->
+                    <article class="project-card">
+                        <div class="card-image placeholder-bg"></div>
+                        <div class="card-content">
+                            <h3>Proyecto Demo 2</h3>
+                            <p>Explorando nuevas tecnologías y diseños.</p>
+                            <a href="#" class="link-arrow">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 (Placeholder) -->
+                    <article class="project-card">
+                        <div class="card-image placeholder-bg"></div>
+                        <div class="card-content">
+                            <h3>Próximamente</h3>
+                            <p>Trabajando en algo genial.</p>
+                            <a href="#" class="link-arrow">Ver más &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <h2>Hablemos</h2>
+            <p>¿Tienes una idea o proyecto? Me encantaría escucharla.</p>
+            <a href="mailto:email@ejemplo.com" class="btn btn-primary">Envíame un correo</a>
+
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+
+            <p class="copyright">&copy; 2024 Walter Lugo. Hecho con código.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
